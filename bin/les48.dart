@@ -1,5 +1,5 @@
 void main() {
-  List <int> numbers = [4,2,-4,2,5,-7];
+  List <int> numbers = [4, 2, -4, 2, 5, -7];
 
   //распечатаем список
   print(numbers);
@@ -65,4 +65,21 @@ void main() {
 
   // contains(Object element): вовзращает true, если элемент содержится в списке
   print(numbers.contains(3));
+
+// join(String separator = "" ]): объединяет все элементы списка в строку. Можно указать необязательный параметр separator, который будет разделять элементы
+print(numbers.join('\t'));
+
+// skip(int count): вовзращает коллекцию, в которой отсутствуют первые count элементов
+print(numbers.skip(2));
+print(numbers.skip(2).toList());
+print(numbers);
+
+// take(int count): возвращает коллекцию, которая содержит первые count элементов
+print(numbers.take(2));
+print(numbers.take(2).toList());
+print(numbers);
+
+// where(bool test(E element)): вовзращает коллекцию, элементы которой соответствуют некоторому условию, которое передаётся в виде функции
+print(numbers.where((element) => element.isEven));
+
 }
