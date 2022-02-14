@@ -81,5 +81,29 @@ print(numbers);
 
 // where(bool test(E element)): вовзращает коллекцию, элементы которой соответствуют некоторому условию, которое передаётся в виде функции
 print(numbers.where((element) => element.isEven));
+print(numbers.where((element) => element.isEven).toList());
+print(numbers);
 
+
+
+
+//ссылочный тип данных!
+//List<int> anotherNums = numbers;
+List<int> anotherNums = [...numbers];
+anotherNums.removeAt(3);
+print(anotherNums);
+//
+
+for(int i = 0; i < anotherNums.length; i += 2){
+  print('i = $i');
+  print(anotherNums[i]);
+}
+
+for(int element in anotherNums){
+  print(element >= 5);
+}
+
+print('');
+print('forEach');
+anotherNums.forEach((element) => print(element.isOdd));
 }
