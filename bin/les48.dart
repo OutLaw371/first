@@ -10,7 +10,7 @@ void main() {
   // last: возвращает последний элемент
   print(numbers.last);
 
-  // length: вовзращает длину списка
+  // length: возвращает длину списка
   print(numbers.length);
 
   // reversed: возвращает список, в котором все элементы расположены в противоположном порядке
@@ -63,7 +63,7 @@ void main() {
   //sublist(int start, [ int end ]): вовзращает часть списка от индекса start до индекса end
   print(numbers.sublist(3));
 
-  // contains(Object element): вовзращает true, если элемент содержится в списке
+  // contains(Object element): возвращает true, если элемент содержится в списке
   print(numbers.contains(3));
 
 // join(String separator = "" ]): объединяет все элементы списка в строку. Можно указать необязательный параметр separator, который будет разделять элементы
