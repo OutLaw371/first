@@ -49,17 +49,4 @@ int a = seven1.first;
 int b = seven1.last;
 
 
-  }
-
-
-
-
-
-
-
-
-
-
-
-
 }
