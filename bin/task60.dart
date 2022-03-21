@@ -96,7 +96,7 @@ void close() => print('закрываю файл');
 
 
     void main(){
-  AudioPlayer Music = AudioPlayer(60);
+  AudioPlayer Music = AudioPlayer(600,12);
   Music.currentTime = 30;
   print(Music.leftTime);
   Music.stop();
